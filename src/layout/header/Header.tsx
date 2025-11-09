@@ -1,5 +1,5 @@
-import { ReactComponent as MoonIcon } from "../../assets/images/moon.svg";
-import { ReactComponent as LogoIcon } from "../../assets/images/logo.svg";
+import { ReactComponent as MoonIcon } from "../../assets/icons/moon.svg";
+import { ReactComponent as LogoIcon } from "../../assets/icons/logo.svg";
 import { Menu } from "../../components/menu/Menu";
 import styled from "styled-components";
 
@@ -22,6 +22,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 60px;
 `;
 const RightSideHeader = styled.div`
   display: flex;
