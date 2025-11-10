@@ -1,23 +1,17 @@
 import styled from "styled-components";
 import Man from "../../assets/images/man.webp";
-
-import { ReactComponent as Plus } from "../../assets/icons/plus.svg";
-import { ReactComponent as Ellipse } from "../../assets/icons/Ellipse.svg";
+import { Icons } from "./Icons_about_me/Icons";
+import { Description } from "./description_adout_me/Description";
 
 export const AboutMe = () => {
   return (
     <StyleAboutMe>
-      <IconPlus>
-        <Plus />
-      </IconPlus>
-      <IconElipse>
-        <Ellipse />
-      </IconElipse>
+      <Icons />
       <Content>
         <Image>
           <img src={Man} alt="" />
         </Image>
-        <Description></Description>
+        <Description />
       </Content>
     </StyleAboutMe>
   );
@@ -25,7 +19,7 @@ export const AboutMe = () => {
 
 const StyleAboutMe = styled.div`
   background-color: bisque;
-  margin: 80px 150px;
+  margin: 80px 210px;
   border: 2px solid #afafaf;
   border-radius: 201px 0;
   position: relative;
@@ -33,6 +27,9 @@ const StyleAboutMe = styled.div`
 const Content = styled.div`
   position: relative;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 const Image = styled.div`
   img {
@@ -41,14 +38,4 @@ const Image = styled.div`
     border: 25px solid #fff;
     border-radius: 201px;
   }
-`;
-const Description = styled.div``;
-
-const IconPlus = styled.div`
-  position: absolute;
-`;
-const IconElipse = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 0;
 `;
