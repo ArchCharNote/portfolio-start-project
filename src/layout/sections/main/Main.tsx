@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Header } from "../../header/Header";
-import { AboutMe } from "../../../components/about_me/AboutMe";
-import { Skills } from "../../../components/skills/Skills";
+import { AboutMe } from "../../../components/section_main/about_me/AboutMe";
+import { Skills } from "../../../components/section_main/skills/Skills";
 
 export const Main = () => {
   return (

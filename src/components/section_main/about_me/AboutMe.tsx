@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Man from "../../assets/images/man.webp";
+import Man from "../../../assets/images/man.webp";
 import { Icons } from "./Icons_about_me/Icons";
 import { Description } from "./description_adout_me/Description";
 

@@ -1,7 +1,7 @@
-import Photoshop from "../../assets/images/ps.webp";
-import AfterEffects from "../../assets/images/ae.webp";
-import Illustrator from "../../assets/images/ai.webp";
-import Figma from "../../assets/images/figma.webp";
+import Photoshop from "../../../assets/images/ps.webp";
+import AfterEffects from "../../../assets/images/ae.webp";
+import Illustrator from "../../../assets/images/ai.webp";
+import Figma from "../../../assets/images/figma.webp";
 import styled from "styled-components";
 import { Block } from "./block_skills/Block";
 

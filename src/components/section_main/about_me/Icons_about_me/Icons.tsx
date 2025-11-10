@@ -1,5 +1,5 @@
-import { ReactComponent as Plus } from "../../../assets/icons/plus.svg";
-import { ReactComponent as Ellipse } from "../../../assets/icons/Ellipse.svg";
+import { ReactComponent as Plus } from "../../../../assets/icons/plus.svg";
+import { ReactComponent as Ellipse } from "../../../../assets/icons/Ellipse.svg";
 import { styled } from "styled-components";
 
 export const Icons = () => {
