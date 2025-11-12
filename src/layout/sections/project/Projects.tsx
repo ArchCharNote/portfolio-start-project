@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { ReactComponent as PlusBig } from "../../../assets/icons/plusBig.svg";
 import { Menu } from "../../../components/section_project/menu/Menu";
 import { Card } from "../../../components/section_project/card/Card";
+import { WrapperContent } from "../../../components/WrapperContent";
 
 export const Projects = () => {
   return (
     <StyledProjects>
-      <Wrapper>
+      <WrapperContent>
         <Nameming>Projects</Nameming>
         <Menu />
         <Cards>
@@ -20,21 +21,18 @@ export const Projects = () => {
         <Icon>
           <PlusBig />
         </Icon>
-      </Wrapper>
+      </WrapperContent>
     </StyledProjects>
   );
 };
 
-const StyledProjects = styled.div`
+const StyledProjects = styled.section`
   min-height: 100vh;
   background-color: darkgray;
+  display: flex;
+  justify-content: center;
 `;
 
-const Wrapper = styled.div`
-  margin: 100px;
-  background-color: #608b91;
-  position: relative;
-`;
 const Nameming = styled.h2`
   text-align: center;
 `;
