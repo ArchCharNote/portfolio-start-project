@@ -9,7 +9,6 @@ export const Learning = () => {
     <StyledLearning>
       <WrapperContent>
         <Name>Learning</Name>
-
         <Blocks imgs={Car} text="After Effects & Photoshop" />
         <Blocks imgs={City} text=">Website , Html & CSS" />
       </WrapperContent>
