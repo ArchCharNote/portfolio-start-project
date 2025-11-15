@@ -30,6 +30,7 @@ const StyleMessagers = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
+  min-height: 50vh;
 `;
 const InlineIcons = styled.nav`
   display: flex;
