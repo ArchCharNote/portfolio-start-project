@@ -21,7 +21,6 @@ export const Contact = () => {
 };
 
 const StyleContact = styled.section`
-  background-color: gainsboro;
   min-height: 100vh;
   display: flex;
   justify-content: center;

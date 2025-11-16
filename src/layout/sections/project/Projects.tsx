@@ -28,7 +28,6 @@ export const Projects = () => {
 
 const StyledProjects = styled.section`
   min-height: 100vh;
-  background-color: darkgray;
   display: flex;
   justify-content: center;
 `;

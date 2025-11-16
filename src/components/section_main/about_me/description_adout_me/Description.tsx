@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Theme } from "../../../../styles/Theme";
 
 type ButtonPropsType = {
   $withArrow?: boolean;
@@ -8,7 +9,11 @@ export const Description = () => {
   return (
     <>
       <DescriptionStyle>
-        <HeadDescription>I’m Alireza Kavousy nezjad</HeadDescription>
+        <HeadDescription>
+          I’m <Name>Alireza</Name>
+          <br />
+          Kavousy nezjad
+        </HeadDescription>
         <BodyDescription>
           Draft is a revolutionary mobile app built to help you manage your
           business easily and save your money.
@@ -22,8 +27,14 @@ export const Description = () => {
   );
 };
 
+const Name = styled.span`
+  color: ${Theme.colors.active};
+`;
 const DescriptionStyle = styled.div``;
-const HeadDescription = styled.h2``;
+const HeadDescription = styled.h2`
+  font-size: 60px;
+  font-weight: bold;
+`;
 const BodyDescription = styled.p``;
 const ButtonsDescription = styled.div``;
 

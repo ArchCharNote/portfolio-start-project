@@ -1,41 +1,91 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Man from "../../../assets/images/man.webp";
-import { Icons } from "./Icons_about_me/Icons";
+import EllipseIcon from "../../../assets/icons/Ellipse.svg";
+import PlusIcon from "../../../assets/icons/plus.svg";
 import { Description } from "./description_adout_me/Description";
+
+const float = keyframes`
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, -10px) rotate(5deg);
+  }
+`;
 
 export const AboutMe = () => {
   return (
     <StyleAboutMe>
-      <Icons />
       <Content>
         <Image>
           <img src={Man} alt="" />
         </Image>
         <Description />
       </Content>
+      <Ellipse />
+      <Plus />
     </StyleAboutMe>
   );
 };
 
 const StyleAboutMe = styled.div`
-  background-color: bisque;
-  margin: 80px 210px;
+  background: linear-gradient(
+    38deg,
+    rgba(57, 57, 57, 0.6) 0%,
+    rgba(0, 66, 255, 0.42) 100%
+  );
+  margin: 79px 131px 251px 151px;
   border: 2px solid #afafaf;
   border-radius: 201px 0;
   position: relative;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  padding: 43px 0 43px 104px;
 `;
+
+const Ellipse = styled.div`
+  position: absolute;
+  display: inline-block;
+  right: -10px;
+  bottom: -10px;
+  width: 152px;
+  height: 152px;
+  background-image: url("${EllipseIcon}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: ${float} 9s ease-in-out infinite;
+  animation-delay: 0.5s;
+  z-index: -1;
+`;
+
+const Plus = styled.div`
+  position: absolute;
+  display: inline-block;
+  left: 250px;
+  top: -80px;
+  width: 88px;
+  height: 88px;
+  background-image: url("${PlusIcon}");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: ${float} 6s ease-in-out infinite;
+  animation-delay: 1s;
+  z-index: -1;
+`;
+
 const Content = styled.div`
   position: relative;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 `;
 const Image = styled.div`
   img {
     width: 401px;
     height: 401px;
     border: 25px solid #fff;
-    border-radius: 201px;
+    border-radius: 50%;
   }
 `;

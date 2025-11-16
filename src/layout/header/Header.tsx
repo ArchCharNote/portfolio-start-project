@@ -18,11 +18,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #5c5c5c;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 60px;
+  margin: 33px 43px 0px 35px;
 `;
 const RightSideHeader = styled.div`
   display: flex;

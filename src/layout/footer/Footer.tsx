@@ -1,32 +1,30 @@
 import styled from "styled-components";
 import { ReactComponent as Wave } from "../../assets/icons/wave.svg";
+import { Theme } from "../../styles/Theme";
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <Grouped>
         <Wave />
-        <Background>
-          <Text>
-            <div>Coded by Alireza Kavousy nezhad</div>
-            <div>All Rights Reserved 2022</div>
-          </Text>
-        </Background>
+        <Background />
       </Grouped>
+      <Text>
+        <div>Coded by Alireza Kavousy nezhad</div>
+        <div>All Rights Reserved 2022</div>
+      </Text>
     </StyledFooter>
   );
 };
 
 const StyledFooter = styled.section`
-  background-color: goldenrod;
   min-height: 243px;
   display: flex;
   justify-content: flex-end;
-  overflow: hidden;
 `;
 
 const Background = styled.div`
-  background-color: #24335c;
+  background-color: ${Theme.colors.secondaryBG};
   min-height: 110px;
   margin-top: -10px;
   width: 100%;
@@ -37,4 +35,13 @@ const Grouped = styled.div`
   flex-direction: column;
 `;
 
-const Text = styled.div``;
+const Text = styled.div`
+  height: 243px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;

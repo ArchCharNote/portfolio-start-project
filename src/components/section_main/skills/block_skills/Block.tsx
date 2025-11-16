@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Theme } from "../../../../styles/Theme";
 
 type BlockPropsType = {
   img: string;
@@ -18,7 +19,7 @@ export const Block = (props: BlockPropsType) => {
 
 const StyledBlock = styled.div`
   padding: 20px 40px;
-  background-color: cornflowerblue;
+  background-color: ${Theme.colors.secondaryBG};
 `;
 const TextBlock = styled.div``;
 
@@ -28,7 +29,7 @@ const Image = styled.div`
   img {
     width: 55px;
     height: 55px;
-    border: 10px solid #cffffb;
+    border: 10px solid ${Theme.colors.primaryBg};
     border-radius: 55px;
   }
 `;

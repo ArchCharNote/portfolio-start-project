@@ -22,7 +22,6 @@ export const Services = () => {
 
 const StyledServices = styled.section`
   min-height: 100vh;
-  background-color: #5d9eb8;
   display: flex;
   justify-content: center;
 `;

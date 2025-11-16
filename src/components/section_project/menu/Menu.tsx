@@ -5,22 +5,22 @@ export const Menu = () => {
     <StyledMenu>
       <ul>
         <li>
-          <a href=""></a>Story
+          <a href="#">Story</a>
         </li>
         <li>
-          <a href=""></a>Post
+          <a href="#">Post</a>
         </li>
         <li>
-          <a href=""></a>Banner
+          <a href="#">Banner</a>
         </li>
         <li>
-          <a href=""></a>Trailer
+          <a href="#">Trailer</a>
         </li>
         <li>
-          <a href="">Desighn</a>
+          <a href="#">Desighn</a>
         </li>
         <li>
-          <a href="">More</a>
+          <a href="#">More</a>
         </li>
       </ul>
     </StyledMenu>

@@ -38,7 +38,6 @@ const InlineIcons = styled.nav`
 `;
 
 const WithoutWrapper = styled.nav`
-  background-color: blueviolet;
   display: flex;
   flex-direction: column;
   width: 56px;

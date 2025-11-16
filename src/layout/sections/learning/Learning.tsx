@@ -3,6 +3,7 @@ import Car from "../../../assets/images/car.webp";
 import City from "../../../assets/images/city.webp";
 import { WrapperContent } from "../../../components/WrapperContent";
 import { Blocks } from "../../../components/section_learning/Blocks";
+import { Theme } from "../../../styles/Theme";
 
 export const Learning = () => {
   return (
@@ -18,7 +19,7 @@ export const Learning = () => {
 
 const StyledLearning = styled.section`
   min-height: 100vh;
-  background-color: #835926;
+  background-color: ${Theme.colors.secondaryBG};
   display: flex;
   justify-content: center;
 `;
