@@ -16,13 +16,15 @@ const float = keyframes`
 export const AboutMe = () => {
   return (
     <StyleAboutMe>
+      <Ellipse src={EllipseIcon} />
+      <Plus src={PlusIcon} />
       <Content>
         <Image>
           <img src={Man} alt="" />
         </Image>
         <Description />
       </Content>
-      <Ellipse />
+
       <Plus />
     </StyleAboutMe>
   );
@@ -34,23 +36,33 @@ const StyleAboutMe = styled.div`
     rgba(57, 57, 57, 0.6) 0%,
     rgba(0, 66, 255, 0.42) 100%
   );
-  margin: 79px 131px 251px 151px;
+  margin: 80px 130px 60px 150px;
   border: 2px solid #afafaf;
   border-radius: 201px 0;
   position: relative;
   z-index: 10;
   backdrop-filter: blur(12px);
-  padding: 43px 0 43px 104px;
+  padding: 42px 0 42px 104px;
+
+  /* &::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 10px solid red;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+  } */
 `;
 
-const Ellipse = styled.div`
+const Ellipse = styled.img`
   position: absolute;
   display: inline-block;
   right: -10px;
   bottom: -10px;
   width: 152px;
   height: 152px;
-  background-image: url("${EllipseIcon}");
+  /* background-image: url("${EllipseIcon}"); */
   background-size: contain;
   background-repeat: no-repeat;
   animation: ${float} 9s ease-in-out infinite;
@@ -58,14 +70,14 @@ const Ellipse = styled.div`
   z-index: -1;
 `;
 
-const Plus = styled.div`
+const Plus = styled.img`
   position: absolute;
   display: inline-block;
   left: 250px;
   top: -80px;
   width: 88px;
   height: 88px;
-  background-image: url("${PlusIcon}");
+  /* background-image: url("${PlusIcon}"); */
   background-size: contain;
   background-repeat: no-repeat;
   animation: ${float} 6s ease-in-out infinite;
@@ -83,8 +95,8 @@ const Content = styled.div`
 `;
 const Image = styled.div`
   img {
-    width: 401px;
-    height: 401px;
+    width: 400px;
+    height: 400px;
     border: 25px solid #fff;
     border-radius: 50%;
   }

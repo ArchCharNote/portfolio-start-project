@@ -35,13 +35,28 @@ const HeadDescription = styled.h2`
   font-size: 60px;
   font-weight: bold;
 `;
-const BodyDescription = styled.p``;
-const ButtonsDescription = styled.div``;
-
+const BodyDescription = styled.p`
+  margin: 30px 0;
+`;
+const ButtonsDescription = styled.button``;
 const ButtonDescription = styled.button<ButtonPropsType>`
-  padding: 10px;
+  padding: 16px 8px;
+
+  border-radius: 13px;
+  width: 200px;
+  font-size: 16px;
+  color: ${(props) =>
+    props.$withArrow ? Theme.colors.text : Theme.colors.light};
+  background-color: ${(props) =>
+    props.$withArrow ? Theme.colors.active : "transporent"};
+  font-weight: bold;
 
   &::after {
     content: ${(props) => (props.$withArrow ? "'→'" : "''")};
+    padding-left: 6px;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;

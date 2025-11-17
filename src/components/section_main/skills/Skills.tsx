@@ -18,10 +18,14 @@ export const Skills = () => {
   );
 };
 
-const StyledSkills = styled.div``;
+const StyledSkills = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+`;
 const Blocks = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 12px;
   flex-direction: row;
   justify-content: center;
   position: relative;

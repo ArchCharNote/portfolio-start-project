@@ -1,27 +1,28 @@
 import styled from "styled-components";
+import { Theme } from "../../../styles/Theme";
 
 export const Menu = () => {
   return (
     <StyledMenu>
       <ul>
-        <li>
+        <StyledLi>
           <a href="#">Story</a>
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <a href="#">Post</a>
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <a href="#">Banner</a>
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <a href="#">Trailer</a>
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <a href="#">Desighn</a>
-        </li>
-        <li>
+        </StyledLi>
+        <StyledLi>
           <a href="#">More</a>
-        </li>
+        </StyledLi>
       </ul>
     </StyledMenu>
   );
@@ -29,8 +30,15 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
   ul {
+    margin-top: 60px;
     display: flex;
     gap: 60px;
     justify-content: center;
   }
+`;
+
+const StyledLi = styled.li`
+  border: 3px solid ${Theme.colors.border};
+  padding: 10px 60px;
+  border-radius: 32px;
 `;
