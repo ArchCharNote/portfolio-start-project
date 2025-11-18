@@ -22,7 +22,6 @@ export const WrapperModal = () => {
 const WrapperMod = styled.div`
   min-height: 100vh;
   width: 50%;
-  background-color: #6d6d0f;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

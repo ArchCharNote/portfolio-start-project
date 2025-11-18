@@ -21,7 +21,7 @@ export const FormSideRight = () => {
         </Icon>
         <InfoIcon>
           <InfoIconTile>Phone</InfoIconTile>
-          <InfoIconDesc>+989336063923</InfoIconDesc>
+          <InfoIconDesc href="tel:+989336063923">+989336063923</InfoIconDesc>
         </InfoIcon>
       </DivInline>
       <DivInline>
@@ -30,7 +30,9 @@ export const FormSideRight = () => {
         </Icon>
         <InfoIcon>
           <InfoIconTile>Email</InfoIconTile>
-          <InfoIconDesc>arkn@gmail.com</InfoIconDesc>
+          <InfoIconDesc href="mailto:arkn@gmail.com">
+            arkn@gmail.com
+          </InfoIconDesc>
         </InfoIcon>
       </DivInline>
     </StyleFormSideRight>
@@ -41,7 +43,7 @@ const StyleFormSideRight = styled.div``;
 const Icon = styled.div``;
 const InfoIcon = styled.div``;
 const InfoIconTile = styled.div``;
-const InfoIconDesc = styled.div``;
+const InfoIconDesc = styled.a``;
 
 const DivInline = styled.div`
   display: flex;

@@ -21,7 +21,7 @@ export const Services = () => {
 };
 
 const StyledServices = styled.section`
-  min-height: 100vh;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
 `;

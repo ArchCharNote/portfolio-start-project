@@ -4,6 +4,10 @@ import { Menu } from "../../../components/section_project/menu/Menu";
 import { Card } from "../../../components/section_project/card/Card";
 import { WrapperContent } from "../../../components/WrapperContent";
 import { Theme } from "../../../styles/Theme";
+import Rectgl from "../../../assets/images/rectangle.webp";
+import Rectg2 from "../../../assets/images/rectangle2.webp";
+import Rectg3 from "../../../assets/images/rectangle3.webp";
+import Rectg4 from "../../../assets/images/rectangle4.webp";
 
 export const Projects = () => {
   return (
@@ -12,12 +16,14 @@ export const Projects = () => {
         <Nameming>Projects</Nameming>
         <Menu />
         <Cards>
-          <Card img="" description="1" />
-          <Card img="" description="2" />
-          <Card img="" description="3" />
-          <Card img="" description="4" />
-          <Card img="" description="5" />
-          <Card img="" description="6" />
+          <Card img={Rectgl} />
+          <Card img={Rectg2} />
+          <Card img={Rectg3} />
+          <Card img={Rectg4} />
+          <Card img={Rectgl} />
+          <Card img={Rectg2} />
+          <Card img={Rectg3} />
+          <Card img={Rectg4} />
         </Cards>
         <Icon>
           <PlusBig />
@@ -30,6 +36,8 @@ export const Projects = () => {
 const StyledProjects = styled.section`
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
+  background-color: ${Theme.colors.primaryBg};
 `;
 
 const Nameming = styled.h2`
@@ -58,7 +66,7 @@ const Nameming = styled.h2`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 38px;
   margin-top: 20px;
   justify-content: center;
 `;

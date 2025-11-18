@@ -23,7 +23,7 @@ const StyledSkills = styled.div`
   flex-direction: row-reverse;
   justify-content: center;
 `;
-const Blocks = styled.div`
+const Blocks = styled.span`
   display: flex;
   gap: 12px;
   flex-direction: row;

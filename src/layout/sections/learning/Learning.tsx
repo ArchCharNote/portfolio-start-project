@@ -18,7 +18,7 @@ export const Learning = () => {
 };
 
 const StyledLearning = styled.section`
-  min-height: 100vh;
+  padding: 50px 0;
   background-color: ${Theme.colors.secondaryBG};
   display: flex;
   justify-content: center;

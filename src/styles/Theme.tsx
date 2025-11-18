@@ -11,5 +11,6 @@ export const Theme = {
     active: "#2157F2",
     border: "#4C546C",
     card: "#353535",
+    projectCard: "#F9F9FC",
   },
 };
