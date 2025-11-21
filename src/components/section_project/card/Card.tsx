@@ -9,9 +9,8 @@ type CardPropsStyle = {
 export const Card = (props: CardPropsStyle) => {
   return (
     <StyledCart>
-      <ImgCard>
-        <img src={props.img} alt="" />
-      </ImgCard>
+      <img src={props.img} alt="" />
+
       <BottomLayout>
         <DescriptionCard>
           {props.description ?? "Story motion for sale English cources"}
@@ -25,7 +24,7 @@ export const Card = (props: CardPropsStyle) => {
   );
 };
 
-const StyledCart = styled.div`
+const StyledCart = styled.article`
   background-color: ${Theme.colors.secondaryText};
   min-height: 350px;
   border-radius: 32px;
@@ -34,16 +33,14 @@ const StyledCart = styled.div`
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 7px #00000015;
-`;
-const ImgCard = styled.div`
-  height: 240px;
+  overflow: hidden;
   img {
+    height: 250px;
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    border-radius: 30px 30px 0 0;
   }
 `;
+
 const BottomLayout = styled.div`
   display: flex;
   flex-direction: column;

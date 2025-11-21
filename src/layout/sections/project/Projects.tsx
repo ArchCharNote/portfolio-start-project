@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as PlusBig } from "../../../assets/icons/plusBig.svg";
 import { Menu } from "../../../components/section_project/menu/Menu";
 import { Card } from "../../../components/section_project/card/Card";
-import { WrapperContent } from "../../../components/WrapperContent";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Theme } from "../../../styles/Theme";
 import Rectgl from "../../../assets/images/rectangle.webp";
 import Rectg2 from "../../../assets/images/rectangle2.webp";
@@ -12,7 +12,7 @@ import Rectg4 from "../../../assets/images/rectangle4.webp";
 export const Projects = () => {
   return (
     <StyledProjects>
-      <WrapperContent>
+      <FlexWrapper align="center" justify="space-around" direction="column">
         <Nameming>Projects</Nameming>
         <Menu />
         <Cards>
@@ -25,10 +25,10 @@ export const Projects = () => {
           <Card img={Rectg3} />
           <Card img={Rectg4} />
         </Cards>
-        <Icon>
+        {/* <Icon>
           <PlusBig />
-        </Icon>
-      </WrapperContent>
+        </Icon> */}
+      </FlexWrapper>
     </StyledProjects>
   );
 };
@@ -42,7 +42,7 @@ const StyledProjects = styled.section`
 
 const Nameming = styled.h2`
   text-align: center;
-  margin-top: 60px;
+  padding-top: 60px;
   position: relative;
   &::before {
     content: "";

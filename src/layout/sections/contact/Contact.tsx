@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-import { WrapperContent } from "../../../components/WrapperContent";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 import { FormSideRight } from "../../../components/section_contact/FormSideRight";
 import { FormSideLeft } from "../../../components/section_contact/FormSideLeft";
 
 export const Contact = () => {
   return (
     <StyleContact>
-      <WrapperContent>
+      <FlexWrapper>
         <Title>Contact Us</Title>
         <Form>
           <ContenForm>
@@ -15,7 +15,7 @@ export const Contact = () => {
             <FormSideRight />
           </ContenForm>
         </Form>
-      </WrapperContent>
+      </FlexWrapper>
     </StyleContact>
   );
 };

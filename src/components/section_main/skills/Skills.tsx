@@ -21,7 +21,8 @@ export const Skills = () => {
 const StyledSkills = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 `;
 const Blocks = styled.span`
   display: flex;

@@ -18,10 +18,10 @@ export const Description = () => {
           Draft is a revolutionary mobile app built to help you manage your
           business easily and save your money.
         </BodyDescription>
-        <ButtonsDescription>
-          <ButtonDescription $withArrow>See Projects</ButtonDescription>
-          <ButtonDescription>Download Resume</ButtonDescription>
-        </ButtonsDescription>
+        <LinksDescription>
+          <LinkDescription $withArrow>See Projects</LinkDescription>
+          <LinkDescription>Download Resume</LinkDescription>
+        </LinksDescription>
       </DescriptionStyle>
     </>
   );
@@ -30,18 +30,24 @@ export const Description = () => {
 const Name = styled.span`
   color: ${Theme.colors.active};
 `;
-const DescriptionStyle = styled.div``;
+const DescriptionStyle = styled.div`
+  max-width: 500px;
+  text-align: left;
+`;
 const HeadDescription = styled.h2`
   font-size: 60px;
   font-weight: bold;
+  padding-bottom: 30px;
 `;
 const BodyDescription = styled.p`
-  margin: 30px 0;
+  padding-bottom: 30px;
 `;
-const ButtonsDescription = styled.button``;
-const ButtonDescription = styled.button<ButtonPropsType>`
+const LinksDescription = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+const LinkDescription = styled.a<ButtonPropsType>`
   padding: 16px 8px;
-
   border-radius: 13px;
   width: 200px;
   font-size: 16px;
@@ -50,6 +56,7 @@ const ButtonDescription = styled.button<ButtonPropsType>`
   background-color: ${(props) =>
     props.$withArrow ? Theme.colors.active : "transporent"};
   font-weight: bold;
+  text-align: center;
 
   &::after {
     content: ${(props) => (props.$withArrow ? "'→'" : "''")};

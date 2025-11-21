@@ -9,9 +9,7 @@ type BlockPropsType = {
 export const Block = (props: BlockPropsType) => {
   return (
     <StyledBlock>
-      <Image>
-        <img src={props.img} alt="" />
-      </Image>
+      <img src={props.img} alt="" />
       <TextBlock>{props.text}</TextBlock>
     </StyledBlock>
   );
@@ -24,16 +22,14 @@ const StyledBlock = styled.div`
   display: flex;
   justify-content: center;
   width: 160px;
-`;
-const TextBlock = styled.div``;
 
-const Image = styled.div`
-  position: absolute;
-  top: -38px;
   img {
+    position: absolute;
+    top: -38px;
     width: 65px;
     height: 65px;
     border: 10px solid ${Theme.colors.primaryBg};
     border-radius: 50%;
   }
 `;
+const TextBlock = styled.span``;

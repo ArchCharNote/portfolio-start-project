@@ -30,10 +30,12 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
   ul {
-    margin-top: 60px;
+    padding: 60px;
     display: flex;
     gap: 60px;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `;
 

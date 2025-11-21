@@ -12,7 +12,7 @@ export const ImageBlock = (props: ImageBlockPropsStyle) => {
   );
 };
 
-const StyledImageBlock = styled.div`
+const StyledImageBlock = styled.article`
   width: 330px;
   img {
     width: 100%;

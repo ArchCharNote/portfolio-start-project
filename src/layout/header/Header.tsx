@@ -8,7 +8,9 @@ const items = ["Home", "Projects", "About", "Content"];
 export const Header = () => {
   return (
     <StyledHeader>
-      <LogoIcon />
+      <a href="#">
+        <LogoIcon />
+      </a>
       <RightSideHeader>
         <Menu items={items}></Menu>
         <MoonIcon />
@@ -18,12 +20,16 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 33px 43px 0px 35px;
+  background-color: transparent;
+  position: fixed;
+  padding: 30px;
+  z-index: 9999;
 `;
-const RightSideHeader = styled.div`
+const RightSideHeader = styled.nav`
   display: flex;
   align-items: center;
   gap: 60px;

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-import { WrapperContent } from "../../../components/WrapperContent";
+import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Contenst } from "./Contenst";
 import { Theme } from "../../../styles/Theme";
 
 export const Map = () => {
   return (
     <StyledMap>
-      <WrapperContent>
+      <FlexWrapper align="center" justify="space-around" direction="column">
         <Contenst />
-      </WrapperContent>
+      </FlexWrapper>
     </StyledMap>
   );
 };

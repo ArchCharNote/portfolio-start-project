@@ -35,7 +35,7 @@ const Modal = styled.div`
   align-items: center;
   height: 300px;
   width: 500px;
-  background-color: beige;
+  background-color: #3f3f3f;
   margin-bottom: 50px;
 `;
 const DescriptionStyle = styled.div``;
