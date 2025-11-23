@@ -4,12 +4,13 @@ import {Skills} from "../../../components/section_main/skills/Skills";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Theme} from "../../../styles/Theme";
 import Plus from "../../../assets/icons/plus.svg";
+import {Container} from "../../../components/Container";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <Container>
-                <FlexWrapper align="center" justify="space-around" direction="column">
+            <Container minHeight='100vh'>
+                <FlexWrapper align="center" justify="space-between" direction="column" minHeight='100vh'>
                     <WrapperGlass>
                         <AboutMe/>
                     </WrapperGlass>
@@ -26,22 +27,21 @@ const StyledMain = styled.section`
     justify-content: center;
     background: linear-gradient(
             90deg,
-            ${Theme.colors.secondaryBG} 36%,
+            ${Theme.colors.secondaryBG} 32%,
             ${Theme.colors.primaryBg} 0
     );
 `;
 
-const Container = styled.div`
-`
 
 const WrapperGlass = styled.div`
     position: relative;
     display: flex;
-
+    margin-top: 15%;
+    
     &::after {
         content: "";
         position: absolute;
-        top: -15%;
+        top: -17%;
         left: 40%;
         width: 100px;
         height: 100px;

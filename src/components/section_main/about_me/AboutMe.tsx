@@ -31,11 +31,11 @@ const StyleAboutMe = styled.div`
     rgba(0, 66, 255, 0.42) 100%
   );
   border: 2px solid #afafaf;
-  border-radius: 201px 0;
+  border-radius: 200px 0;
   position: relative;
   z-index: 10;
   backdrop-filter: blur(12px);
-  padding: 80px;
+  padding: 50px;
 `;
 
 const Content = styled.div`
@@ -44,12 +44,13 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
+    flex-wrap: wrap;
 `;
 const Image = styled.div`
   img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border: 25px solid #fff;
     border-radius: 50%;
   }

@@ -16,7 +16,7 @@ export const Card = (props: CardPropsStyle) => {
           {props.description ?? "Story motion for sale English cources"}
         </DescriptionCard>
         <ButtonsCard>
-          <ButtonCard href="#">Edit for you</ButtonCard>
+          <ButtonCard href="#" border='border'>Edit for you</ButtonCard>
           <ButtonCard href="#">See preview</ButtonCard>
         </ButtonsCard>
       </BottomLayout>
@@ -44,13 +44,34 @@ const StyledCart = styled.article`
 const BottomLayout = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+    gap: 20px;
   align-items: center;
-  height: 110px;
+  padding: 24px;
 `;
-const DescriptionCard = styled.div``;
+const DescriptionCard = styled.span`
+    text-align: start;
+    font-weight: bold;
+    line-height: 26px;
+`;
 const ButtonsCard = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 10px;
 `;
-const ButtonCard = styled.a``;
+
+type ButtonCardProps = {
+    border?:string
+}
+const ButtonCard = styled.a<ButtonCardProps>`
+
+    color: ${props => props.border ? Theme.colors.secondaryText : Theme.colors.text};
+    font-size: 14px;
+    background: ${props => props.border ? Theme.colors.projectCard : 'none'};
+    padding: 6px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    
+    &:visited{
+        color: ${props => props.border ? Theme.colors.secondaryText : Theme.colors.text};
+    }
+;
+`;

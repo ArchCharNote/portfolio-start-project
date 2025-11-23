@@ -59,11 +59,7 @@ const LinkDescription = styled.a<ButtonPropsType>`
   text-align: center;
 
   &::after {
-    content: ${(props) => (props.$withArrow ? "'→'" : "''")};
+    content: ${(props) => (props.$withArrow ? "'➜'" : "''")};
     padding-left: 6px;
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 `;

@@ -3,31 +3,33 @@ import AfterEffects from "../../../assets/images/ae.webp";
 import Illustrator from "../../../assets/images/ai.webp";
 import Figma from "../../../assets/images/figma.webp";
 import styled from "styled-components";
-import { Block } from "./block_skills/Block";
+import {Block} from "./block_skills/Block";
 
 export const Skills = () => {
-  return (
-    <StyledSkills>
-      <Blocks>
-        <Block img={Photoshop} text="Photoshop" />
-        <Block img={AfterEffects} text="After Effects" />
-        <Block img={Illustrator} text="Illustrator" />
-        <Block img={Figma} text="Figma" />
-      </Blocks>
-    </StyledSkills>
-  );
+    return (
+        <StyledSkills>
+            <Blocks>
+                <Block img={Photoshop} text="Photoshop"/>
+                <Block img={AfterEffects} text="After Effects"/>
+                <Block img={Illustrator} text="Illustrator"/>
+                <Block img={Figma} text="Figma"/>
+            </Blocks>
+        </StyledSkills>
+    );
 };
 
 const StyledSkills = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
 `;
 const Blocks = styled.span`
-  display: flex;
-  gap: 12px;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
 `;

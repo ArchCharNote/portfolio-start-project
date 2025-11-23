@@ -32,6 +32,7 @@ export const GlobalStyles = createGlobalStyle`
     a{
         text-decoration: none;
         white-space: nowrap;
+        cursor: pointer;
     }
 
     ul{
@@ -45,5 +46,9 @@ export const GlobalStyles = createGlobalStyle`
 
     section{
         background-color: ${Theme.colors.primaryBg};        
+    }
+    
+    h2{
+        font-size: 32px;
     }
 `;

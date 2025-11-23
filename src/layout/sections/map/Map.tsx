@@ -1,22 +1,32 @@
 import styled from "styled-components";
 
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Contenst } from "./Contenst";
-import { Theme } from "../../../styles/Theme";
+import MapImg from "../../../assets/images/me.webp";
+
+import {Theme} from "../../../styles/Theme";
+import {WrapperModal} from "../../../components/section_map/WrapperModal";
+
 
 export const Map = () => {
-  return (
-    <StyledMap>
-      <FlexWrapper align="center" justify="space-around" direction="column">
-        <Contenst />
-      </FlexWrapper>
-    </StyledMap>
-  );
+    return (
+        <StyledMap>
+            <WrapperModal/>
+            <StyleMap/>
+        </StyledMap>
+    );
 };
 
 const StyledMap = styled.section`
-  min-height: 100vh;
-  background-color: ${Theme.colors.light};
-  display: flex;
-  justify-content: center;
+    min-height: 100vh;
+    background-color: ${Theme.colors.light};
+    position: relative;
+`;
+
+
+const StyleMap = styled.div`
+    height: 100vh;
+    width: 100%;
+    background-image: url(${MapImg});
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
 `;
