@@ -12,13 +12,10 @@ export const Blocks = (props: StyleBlocksProps) => {
         <>
             <TextBlocks>{props.text}</TextBlocks>
             <StyleBlocks>
-                <ImageBlocks>
-                    <ImageBlock img={props.imgs}/>
-                    <ImageBlock img={props.imgs}/>
-                    <ImageBlock img={props.imgs}/>
-                    <ImageBlock img={props.imgs}/>
-                    <ImageBlock img={props.imgs}/>
-                </ImageBlocks>
+                <ImageBlock img={props.imgs}/>
+                <ImageBlock img={props.imgs}/>
+                <ImageBlock img={props.imgs}/>
+                <ImageBlock img={props.imgs}/>
             </StyleBlocks>
         </>
 
@@ -27,15 +24,13 @@ export const Blocks = (props: StyleBlocksProps) => {
 
 const StyleBlocks = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    overflow: overlay;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: clip;
 `;
 const TextBlocks = styled.div`
     padding: 14px 0;
 `;
-const ImageBlocks = styled.div`
-    display: flex;
-    gap: 12px;
-`;
+

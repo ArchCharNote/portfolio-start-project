@@ -13,7 +13,7 @@ export const Header = () => {
             </a>
             <RightSideHeader>
                 <Menu items={items}></Menu>
-                <MoonIcon/>
+                <a href="#"><MoonIcon/></a>
             </RightSideHeader>
         </StyledHeader>
     );
@@ -28,6 +28,7 @@ const StyledHeader = styled.header`
     position: fixed;
     padding: 30px;
     z-index: 9999;
+    
 `;
 const RightSideHeader = styled.nav`
     display: flex;

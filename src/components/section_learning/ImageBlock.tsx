@@ -1,22 +1,22 @@
-import { styled } from "styled-components";
+import {styled} from "styled-components";
 
 type ImageBlockPropsStyle = {
-  img: string;
+    img: string;
 };
 
 export const ImageBlock = (props: ImageBlockPropsStyle) => {
-  return (
-    <StyledImageBlock>
-      <img src={props.img} alt="" />
-    </StyledImageBlock>
-  );
+    return (
+
+        <StyledImageBlock src={props.img} alt=""/>
+
+    );
 };
 
-const StyledImageBlock = styled.article`
-  width: 330px;
-  img {
+const StyledImageBlock = styled.img`
+    box-shadow: 5px 6px 10px #0000006b;
+    max-width: 330px;
     width: 100%;
     object-fit: cover;
     border-radius: 9px;
-  }
+
 `;

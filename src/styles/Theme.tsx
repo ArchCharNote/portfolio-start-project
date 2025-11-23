@@ -13,4 +13,9 @@ export const Theme = {
         form: '#2C2B2B',
         input: '#393838',
     },
+
+    media:{
+        tablet: "screen and (min-width: 768px)",
+        mobile: "screen and (min-width: 576px)",
+    }
 };

@@ -1,23 +1,13 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Man from "../../../assets/images/man.webp";
 import { Description } from "./description_adout_me/Description";
 
-const float = keyframes`
-  0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate(10px, -10px) rotate(5deg);
-  }
-`;
 
 export const AboutMe = () => {
   return (
     <StyleAboutMe>
       <Content>
-        <Image>
-          <img src={Man} alt="" />
-        </Image>
+          <Image src={Man} alt="" />
         <Description />
       </Content>
     </StyleAboutMe>
@@ -47,11 +37,11 @@ const Content = styled.div`
   gap: 80px;
     flex-wrap: wrap;
 `;
-const Image = styled.div`
-  img {
-    width: 350px;
-    height: 350px;
+const Image = styled.img`
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
     border: 25px solid #fff;
     border-radius: 50%;
-  }
 `;
