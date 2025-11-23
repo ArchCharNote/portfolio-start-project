@@ -7,11 +7,10 @@ export const Footer = () => {
     <StyledFooter>
       <Grouped>
         <Wave />
-        <Background />
       </Grouped>
       <Text>
-        <div>Coded by Alireza Kavousy nezhad</div>
-        <div>All Rights Reserved 2022</div>
+        <span>Coded by Alireza Kavousy nezhad</span>
+        <span>All Rights Reserved 2025</span>
       </Text>
     </StyledFooter>
   );
@@ -21,13 +20,6 @@ const StyledFooter = styled.section`
   min-height: 243px;
   display: flex;
   justify-content: flex-end;
-`;
-
-const Background = styled.div`
-  background-color: ${Theme.colors.secondaryBG};
-  min-height: 110px;
-  margin-top: -10px;
-  width: 100%;
 `;
 
 const Grouped = styled.div`

@@ -54,4 +54,5 @@ const Cards = styled.div`
     justify-content: center;
     gap: 30px;
     padding: 60px 0;
+    flex-wrap: wrap;
 `;

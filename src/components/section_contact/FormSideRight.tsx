@@ -7,27 +7,27 @@ export const FormSideRight = () => {
   return (
     <StyleFormSideRight>
       <DivInline>
-        <Icon>
+
           <Location />
-        </Icon>
+
         <InfoIcon>
           <InfoIconTile>Location</InfoIconTile>
           <InfoIconDesc>Mashhad/Iran</InfoIconDesc>
         </InfoIcon>
       </DivInline>
       <DivInline>
-        <Icon>
+
           <Phone />
-        </Icon>
+
         <InfoIcon>
           <InfoIconTile>Phone</InfoIconTile>
           <InfoIconDesc href="tel:+989336063923">+989336063923</InfoIconDesc>
         </InfoIcon>
       </DivInline>
       <DivInline>
-        <Icon>
+
           <Email />
-        </Icon>
+
         <InfoIcon>
           <InfoIconTile>Email</InfoIconTile>
           <InfoIconDesc href="mailto:arkn@gmail.com">
@@ -40,12 +40,18 @@ export const FormSideRight = () => {
 };
 
 const StyleFormSideRight = styled.div``;
-const Icon = styled.div``;
-const InfoIcon = styled.div``;
-const InfoIconTile = styled.div``;
-const InfoIconDesc = styled.a``;
+const InfoIcon = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+const InfoIconTile = styled.span``;
+const InfoIconDesc = styled.a`
+    color: #8B8B8B;
+`;
 
 const DivInline = styled.div`
-  display: flex;
-  gap: 7px;
+    display: flex;
+    gap: 26px;
+    padding-bottom: 40px;
+
 `;

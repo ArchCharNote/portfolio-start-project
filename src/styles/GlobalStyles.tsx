@@ -7,48 +7,64 @@ export const GlobalStyles = createGlobalStyle`
     *::after {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;       
+        box-sizing: border-box;
     }
 
-    *::selection{
+    *::-webkit-scrollbar {
+        height: 6px;
+        width: 4px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: ${Theme.colors.active};
+        border: 1px solid #5e83f6;
+        border-radius: 10px;
+    }
+
+    *::selection {
         color: ${Theme.colors.text};
         background-color: ${Theme.colors.primaryBg};
     }
 
-    *:visited{
-         color: ${Theme.colors.text};
+    *:visited {
+        color: ${Theme.colors.text};
     }
 
-    body{
-        font-family:'Roboto','Inter', -apple-system, BlinkMacSystemFont,  'Segoe UI', 'Oxygen',
+    body {
+        font-family: 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;   
+        -moz-osx-font-smoothing: grayscale;
         color: ${Theme.colors.text};
 
     }
 
-    a{
+    a {
         text-decoration: none;
         white-space: nowrap;
         cursor: pointer;
+        color: ${Theme.colors.text};
     }
 
-    ul{
+    ul {
         list-style: none;
     }
 
-    button{
+    button {
         background-color: unset;
         border: none;
     }
 
-    section{
-        background-color: ${Theme.colors.primaryBg};        
+    section {
+        background-color: ${Theme.colors.primaryBg};
     }
-    
-    h2{
+
+    h2 {
         font-size: 32px;
     }
 `;
